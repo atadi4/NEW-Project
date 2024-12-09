@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+int main()
+{
+	double r, L, S, V, C;
+
+	//定义Π
+	C = 3.14159;
+
+	printf("请输入半径 r:");
+	scanf("%lf", &r);
+	//计算周长L
+	L = 2 * C * r;
+	//计算面积S
+	S = C * r * r;
+
+		//计算体积V
+	V = (4.0/ 3.0) * C * r * r;
+
+	//以小数形式输出
+	printf("圆的L为：%lf\n", L);
+	printf("圆的S为: %lf\n", S);
+	printf("球的V为；%lf\n", V);
+	//以指数形式输出
+	printf("圆的L为：%e\n", L);
+	printf("圆的S为: %e\n", S);
+	printf("球的V为；%e\n", V);
+
+	return 0;
+
+}
